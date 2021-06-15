@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ui",
+    "\\ui\\angular11",
+    "\\ui\\angular11\\e2e",
+    "\\ui\\angular11\\e2e\\src",
+    "\\ui\\angular11\\src",
+    "\\ui\\angular11\\src\\app",
+    "\\ui\\angular11\\src\\app\\conditions",
+    "\\ui\\angular11\\src\\app\\conditions\\add-edit-cond",
+    "\\ui\\angular11\\src\\assets"
+  ],
+  "PreviewInSolutionExplorer": false
+}

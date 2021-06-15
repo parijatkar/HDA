@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\department",
+    "\\src\\app\\department\\show-dep",
+    "\\src\\app\\messages",
+    "\\src\\app\\messages\\add-edit-msg",
+    "\\src\\app\\procedures",
+    "\\src\\app\\procedures\\add-edit-proc",
+    "\\src\\app\\procedures\\show-proc"
+  ],
+  "SelectedNode": "\\src\\app\\messages\\add-edit-msg\\add-edit-msg.component.ts",
+  "PreviewInSolutionExplorer": false
+}

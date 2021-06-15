@@ -1,0 +1,23 @@
+<div class="form-froup row">
+
+  <label class="col-sm-2 col-form-label">Reports</label>
+  <label class="col-sm-2 col-form-label">MRN</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" [(ngModel)]="ReportId"
+           placeholder="Enter ReportId">
+  </div>
+  <label class="col-sm-2 col-form-label">Patient Observation</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" [(ngModel)]="ReportType"
+           placeholder="Enter ReportType">
+  </div>
+</div>
+
+<button (click)="addReport()" *ngIf="rep.ReportId==0" class="btn btn-primary">
+  Add
+</button>
+
+<button (click)="updateReport()" *ngIf="rep.ReportId!=0" class="btn btn-primary">
+  Update
+</button>
+

@@ -1,0 +1,71 @@
+<div class="container">
+
+  
+    <!-- logo -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img color="red" width="100" height="100" src="../assets/images/LogoMadPar.jpg">
+        <h6>Madpar Inc.</h6>
+      </a>
+    </div>
+  
+  <h5 class="d-flex justify-content-center">Patient Management Portal</h5>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <button routerLink="employee"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Patients
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="department"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Observations
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="procedures"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Procedures
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="medications"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Medications
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="conditions"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Conditions
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="score"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Risk Scores
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="reports"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          Reports
+        </button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="messages"
+                class="m-1 btn btn-light btn-outline-primary" Button>
+          EHR Message Upload
+        </button>
+      </li>
+
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+</div>

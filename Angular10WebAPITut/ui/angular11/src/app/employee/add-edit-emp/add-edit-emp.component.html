@@ -1,0 +1,64 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+  <div class="form-froup row" style="width: 60%;">
+
+    <label class="col-sm-2 col-form-label">MRN</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="MRN"
+             placeholder="0">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Patient Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="PatientName"
+             placeholder="Enter Patient Name">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Gender</label>
+    <div class="col-sm-10">
+      <select class="form-control" [(ngModel)]="Gender">
+        <option>--Select--</option>
+        <option>M</option>
+        <option>F</option>
+        <option *ngFor="let gender of GenderList">
+          {{employee.GenderList}}
+        </option>
+      </select>
+    </div>
+
+    <label class="col-sm-2 col-form-label">Race</label>
+    <div class="col-sm-10">
+      <select class="form-control" [(ngModel)]="Race">
+        <option>--Select--</option>
+        <option>asian</option>
+        <option>black</option>
+        <option>native</option>
+        <option>white</option>
+        <option *ngFor="let race of RaceList">
+          {{employee.RaceList}}
+        </option>
+      </select>
+
+    </div>
+
+    <label class="col-sm-2 col-form-label">Date of Birth</label>
+    <div class="col-sm-10">
+      <input type="date" [(ngModel)]="DateOfBirth">
+    </div>
+
+
+    <div class="ml-3 bd-highlight" style="width: 40%;">
+      <img [src]=PhotoFilePath height="250px;" width="200px;">
+      <input type="file" (change)="uploadPhoto($event)" class="mt-2" />
+    </div>
+  </div>
+
+<div>
+<button (click)="addEmployee()" *ngIf="emp.EmployeeId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateEmployee()" *ngIf="emp.EmployeeId!=0" class="btn btn-primary">
+    Update
+</button>
+</div>

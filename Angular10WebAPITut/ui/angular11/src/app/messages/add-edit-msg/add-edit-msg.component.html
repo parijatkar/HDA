@@ -1,0 +1,39 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+  <div class="form-froup row" style="width: 60%;">
+
+    <label class="col-sm-2 col-form-label">MRN</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="MRN"
+             placeholder="0">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Message</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="body"
+             placeholder="Enter Message">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Message Type</label>
+    <div class="col-sm-10">
+      <select class="form-control" [(ngModel)]="type">
+        <option>--Select--</option>
+        <option>HL7</option>
+        <option>FHIR</option>
+
+      </select>
+    </div>
+    <label class="col-sm-2 col-form-label">Message Date</label>
+    <div class="col-sm-10">
+      <input type="date" [(ngModel)]="msgDate">
+    </div>
+
+
+
+    <div>
+      <button (click)="uploadMessage()">
+        Upload
+      </button>
+
+
+    </div>

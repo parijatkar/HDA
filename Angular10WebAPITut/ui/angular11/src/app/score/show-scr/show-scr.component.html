@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>MRN</th>
+      <th>RScore</th>
+      <th>RGroup</th>
+      <th>UpdateDate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dataItem of ScoreList">
+      <td>{{dataItem.MRN}}</td>
+      <td>{{dataItem.RScore}}</td>
+      <td>{{dataItem.RGroup}}</td>
+      <td>{{dataItem.UpdateDate}}</td>
+    </tr>
+  </tbody>
+</table>
